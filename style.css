@@ -1,6 +1,5 @@
 body {
     background-color: #4f4f4f;
-
 }
 
 .centerbox{
@@ -25,6 +24,7 @@ body {
     top: 0px;
     left: 0px;
     border: 1px solid #1a1a1a;
+    box-shadow: inset 0px -1px 0px #15151591;
 }
 
 
@@ -36,14 +36,14 @@ body {
     height: 531px;
     padding-top: 15px;
     background-color: #1a1a1a;
-    border-right: 1px solid #575757;
+    border-right: 1px solid #444444;
     left: 1px;
 }
 
 .tab button{
     display: block;
     background-color: #1a1a1a;
-    color: rgb(151, 151, 151);
+    color: rgb(121, 121, 121);
     width: 100%;
     height: 80px;
     border: none;
@@ -51,11 +51,11 @@ body {
 
 .tab button.active{
     padding-left: 1px ;
-    color:rgb(244, 244, 244);
+    color:rgb(214, 214, 214);
     background-color: #252525;
     border:none;
-    border-top: 1px solid #575757;
-    border-bottom: 1px solid #575757;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #444444;
     background-image: radial-gradient(#151515 10%, transparent 11%),
     radial-gradient(#151515 10%, transparent 11%);
     background-size: 5px 5px;
@@ -64,9 +64,12 @@ body {
     outline: #252525 solid 1px;
 }
 
+.tab button.active:hover{
+    color:rgb(214, 214, 214);
+}
 
 .tab button:hover{
-    color: #bbbbbb;
+    color: #cacaca;
 
 }
 
@@ -86,4 +89,87 @@ body {
     background-position: 0 0, 8px 8px;
     background-repeat: repeat;
     border: none;
+}
+.panel1{
+    position: fixed;
+    background-color: #1a1a1a;
+    left: 110px;
+    top: 5%;
+    width: 35%;
+    height: 90%;
+    border: none;
+    border: 1px solid #444444;
+    outline: #1a1a1a solid 1px;
+}
+
+.panel2{
+    position: fixed;
+    background-color: #1a1a1a;
+    left: 60%;
+    top: 5%;
+    width: 35%;
+    height: 90%;
+    border: none;
+    border: 1px solid #444444;
+    outline: #1a1a1a solid 1px;
+}
+
+.panel3{
+    position: fixed;
+    background-color: #1a1a1a;
+    left: 110px;
+    top: 5%;
+    width: 35%;
+    height: 60%;
+    border: none;
+    border: 1px solid #444444;
+    outline: #1a1a1a solid 1px;
+}
+
+.panel4{
+    position: fixed;
+    background-color: #1a1a1a;
+    left: 110px;
+    top: 70%;
+    width: 35%;
+    height: 25%;
+    border: none;
+    border: 1px solid #444444;
+    outline: #1a1a1a solid 1px;
+}
+
+.horizpanel{
+    position: fixed;
+    background-color: #1a1a1a;
+    left: 110px;
+    top: 5%;
+    width: 75%;
+    height: 10%;
+    border: none;
+    border: 1px solid #444444;
+    outline: #1a1a1a solid 1px;
+}
+
+.ctabpanel1{
+    position: fixed;
+    background-color: #1a1a1a;
+    left: 110px;
+    top: 20%;
+    width: 35%;
+    height: 75%;
+    border: none;
+    border: 1px solid #444444;
+    outline: #1a1a1a solid 1px;
+}
+
+.ctabpanel2{
+    position: fixed;
+    background-color: #1a1a1a;
+    left: 60%;
+    top: 20%;
+    width: 35%;
+    height: 75%;
+    border: none;
+    border: 1px solid #444444;
+    outline: #1a1a1a solid 1px;
 }
