@@ -1,9 +1,27 @@
 body {
     background-color: #4f4f4f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
 }
 
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    background: #363636;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+
 .centerbox{
-    width: 550px;
+    width: 600px;
     height: 550px;
     position: absolute;
     top: 50%;
@@ -18,13 +36,92 @@ body {
 .gradientbar {
     background: rgb(76,188,219);
     background: linear-gradient(90deg, rgba(76,188,219,1) 0%, rgba(215,67,223,1) 51%, rgba(251,255,0,1) 100%); 
-    width: 548px;
+    width: 598px;
     height: 2px;
     position: absolute;
     top: 0px;
     left: 0px;
     border: 1px solid #1a1a1a;
     box-shadow: inset 0px -1px 0px #15151591;
+}
+
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 6px;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 1px solid #222222; /* iOS */
+
+}
+
+::-webkit-slider-runnable-track {
+    background: #707070;
+    box-shadow: inset -2px 5px 10px rgb(43, 42, 42);
+
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0px; /* 1 */
+    height: 10px;
+    background: #96C83CFF;
+    box-shadow: -200px 0 0 200px #96C83CFF; /* 2 */
+    border-left: none; /* 1 */
+}
+
+::-moz-range-track {
+    height: 7px;
+    background: #707070;
+    box-shadow: inset 0px 5px 10px rgb(53, 53, 53);
+}
+
+::-moz-range-thumb {
+    background: #96C83CFF;
+    height: 7px;
+    width: 10px;
+    border: none;
+    border-radius: 0 !important;
+    box-shadow: -200px 0 0 200px #96C83CFF;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: #96C83CFF;
+}
+
+::-ms-thumb { 
+    background: #96C83CFF;
+    border: none;
+    height: 7px;
+    width: 10px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: #707070;
+    box-shadow: inset 0px 3px 10px rgb(53, 53, 53);
+    color: transparent;
+    height: 7px;
+    border: none;
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+
+p{
+    padding-left: 20px;
 }
 
 
@@ -79,7 +176,7 @@ body {
     color: white;
     left: 81px;
     top: 4px;
-    width: 469px;
+    width: 86.5%;
     height: 546px;
     display: none;
     background-color: #252525;
@@ -143,7 +240,7 @@ body {
     background-color: #1a1a1a;
     left: 110px;
     top: 5%;
-    width: 75%;
+    width: 76.6%;
     height: 10%;
     border: none;
     border: 1px solid #444444;
